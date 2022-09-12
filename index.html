@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tip Calculator</title>
+</head>
+<body>
+    <!-- Calculator container -->
+    <section class="calculator">
+        <!-- Calculator title -->
+        <div class="container">
+            <h1 class="calculator__title">
+                Tip calculator
+            </h1>
+        </div>
+        <!-- Calculator form -->
+        <div class="container">
+            <form action="" class="calculator-form">
+                <!-- Calculator intputs -->
+                
+                <div class="calculator-run">
+                    <label for="account-input" class="calculator-run__account-label">Account total</label>
+                    <input type="text" class="calculator-run__account-input" id="account-input">
+                    
+                    <label for="tip-input" class="calculator-run__tip-label">Tip percentage</label>
+                    <input type="text" class="calculator-run__tip-input" id="tip-input">
+                    
+                    <input type="submit" value="calculate" class="calculator-run--calculate-button" id="calculate-button">
+                </div>
+                
+                <!-- Calculator outputs -->
+                <div class="calculator-summary" id="resume">
+                    <!-- Resume results -->
+                    <table class="results">
+                        <!-- Resume title -->
+                        <tr class="result-title">
+                            <th >
+                                Resume
+                            </th>
+                        </tr>
+                        <!-- Description results -->
+                        <tr class="result-description">
+                            <td class="result-description__concept">Account total </td>
+                            <td class="result-description__value" id="value-account"></td>
+                        </tr>
+                        <tr class="result-description">
+                            <td class="result-description__concept">Tip           </td>
+                            <td class="result-description__value" id="value-tip"></td>
+                        </tr>
+                        <tr class="result-description">
+                            <td class="result-description__concept">Payable total </td>
+                            <td class="result-description__value" id="value-total"></td>
+                        </tr>
+
+                    </table>
+                </div>
+            </form>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
